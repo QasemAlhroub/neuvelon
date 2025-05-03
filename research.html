@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Neuvelon</title>
+    <meta name="description" content="Explore Neuvelon's research in brain-state modeling, EEG signal processing, and brain-computer interfaces.">
+    <!-- Using Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A00E0',
+                        secondary: '#8E2DE2',
+                        accent: '#A45EE5',
+                        muted: '#f8f9fa',
+                        'muted-foreground': '#6c757d',
+                        foreground: '#212529',
+                        border: '#dee2e6',
+                        background: '#ffffff'
+                    },
+                    backgroundImage: {
+                        'gradient-primary-secondary': 'linear-gradient(to right, #4A00E0, #8E2DE2)',
+                    },
+                    backgroundColor: {
+                         'primary/10': 'rgba(74, 0, 224, 0.1)',
+                         'secondary/10': 'rgba(142, 45, 226, 0.1)',
+                         'accent/10': 'rgba(164, 94, 229, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mobile-menu { display: none; }
+        .mobile-menu.active { display: block; }
+    </style>
+</head>
+<body class="text-foreground bg-background">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-40">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a class="flex items-center" href="index.html">
+                <img alt="Neuvelon Logo" width="180" height="50" class="h-10 w-auto" src="images/brain_graphic_purple.png">
+            </a>
+            <div class="hidden md:flex space-x-2">
+                <a class="px-4 py-2 text-foreground hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+                <a class="px-4 py-2 text-foreground hover:text-primary transition-colors duration-300" href="about.html">About</a>
+                <a class="px-4 py-2 text-foreground hover:text-primary transition-colors duration-300" href="technology.html">Technology</a>
+                <a class="px-4 py-2 text-foreground hover:text-primary transition-colors duration-300" href="products.html">Products</a>
+                <a class="px-4 py-2 text-foreground hover:text-primary transition-colors duration-300" href="applications.html">Applications</a>
+                <a class="px-4 py-2 text-foreground hover:text-primary transition-colors duration-300" href="research.html">Research</a>
+                <a class="px-4 py-2 text-foreground hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+            </div>
+            <button class="md:hidden flex items-center text-foreground mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu absolute right-0 mt-2 w-64 bg-white shadow-xl md:hidden">
+             <nav class="flex flex-col p-4">
+                <a class="py-2 px-4 text-foreground hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+                <a class="py-2 px-4 text-foreground hover:text-primary transition-colors duration-300" href="about.html">About</a>
+                <a class="py-2 px-4 text-foreground hover:text-primary transition-colors duration-300" href="technology.html">Technology</a>
+                <a class="py-2 px-4 text-foreground hover:text-primary transition-colors duration-300" href="products.html">Products</a>
+                <a class="py-2 px-4 text-foreground hover:text-primary transition-colors duration-300" href="applications.html">Applications</a>
+                <a class="py-2 px-4 text-foreground hover:text-primary transition-colors duration-300" href="research.html">Research</a>
+                <a class="py-2 px-4 text-foreground hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </nav>
+
+    <main class="min-h-screen">
+        <div class="flex flex-col min-h-screen">
+            <!-- Page Header Section -->
+            <section class="bg-gradient-primary-secondary text-white py-20">
+                <div class="container mx-auto px-4 text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Research</h1>
+                    <p class="text-xl max-w-3xl mx-auto">Exploring the frontiers of brain-state modeling and EEG technology to advance neuroscience and human-computer interaction.</p>
+                </div>
+            </section>
+
+            <!-- Research Focus Section -->
+            <section class="py-16">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-3xl font-bold mb-8 text-center">Our Research Focus</h2>
+                        <p class="text-gray-700 mb-6">At Neuvelon, our research is centered on brain-state modeling using electroencephalography (EEG), exploring the intersection of neuroscience, signal processing, and embedded systems. We're developing novel software frameworks that can analyze EEG signals to model different brain states and utilize these decoded signals to control embedded systems and microcontrollers.</p>
+                        <p class="text-gray-700 mb-6">Our interdisciplinary approach combines expertise in neuroscience, computer science, electrical engineering, and human-computer interaction to create innovative solutions that bridge the gap between human thought and technology.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Research Areas Section -->
+            <section class="py-16 bg-gray-50">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-12 text-center">Key Research Areas</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3">EEG Signal Processing</h3>
+                            <p class="text-gray-700 mb-4">Developing advanced algorithms for filtering, cleaning, and extracting meaningful features from raw EEG data. Our research includes:</p>
+                            <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                                <li>Artifact removal techniques</li>
+                                <li>Wavelet transforms for time-frequency analysis</li>
+                                <li>Independent Component Analysis (ICA)</li>
+                                <li>Adaptive filtering methods</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3">Brain-State Classification</h3>
+                            <p class="text-gray-700 mb-4">Creating algorithms that can reliably identify and classify different mental states from EEG signals. Our research includes:</p>
+                            <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                                <li>Neural network architectures for EEG classification</li>
+                                <li>Support Vector Machines (SVM) optimization</li>
+                                <li>Deep learning approaches for brain-state recognition</li>
+                                <li>Transfer learning for improved classification accuracy</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3">Real-time Signal Decoding</h3>
+                            <p class="text-gray-700 mb-4">Developing methods to translate brain states into control signals with minimal latency. Our research includes:</p>
+                            <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                                <li>Low-latency processing pipelines</li>
+                                <li>Adaptive thresholding techniques</li>
+                                <li>Predictive algorithms for anticipatory control</li>
+                                <li>Optimization for embedded system implementation</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-3">Brain-Computer Interfaces</h3>
+                            <p class="text-gray-700 mb-4">Creating intuitive interfaces between the brain and external devices. Our research includes:</p>
+                            <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                                <li>User-centered BCI design methodologies</li>
+                                <li>Multimodal integration with other biosignals</li>
+                                <li>Adaptive interfaces that learn from user behavior</li>
+                                <li>Feedback mechanisms for improved control</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Methodology Section -->
+            <section class="py-16">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-3xl font-bold mb-8 text-center">Research Methodology</h2>
+                        <div class="bg-white p-8 rounded-xl shadow-sm">
+                            <div class="space-y-6">
+                                <div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">Data Collection</h3>
+                                    <p class="text-gray-700">We use high-resolution EEG equipment to collect data from subjects in various mental states. Data collection involves placing electrodes according to the international 10-20 system, ensuring proper contact and minimal impedance. Sessions are conducted in a controlled environment to reduce external noise and artifacts.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">Data Analysis</h3>
+                                    <p class="text-gray-700">Our data analysis pipeline includes preprocessing, feature extraction, and classification stages. We employ both traditional signal processing techniques and advanced machine learning methods to identify patterns in EEG data that correspond to different brain states.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">Algorithm Development</h3>
+                                    <p class="text-gray-700">We develop and test algorithms for brain-state classification, signal decoding, and control signal generation. Our approach combines theoretical modeling with empirical validation to ensure robust performance across different users and conditions.</p>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-primary mb-3">Validation and Testing</h3>
+                                    <p class="text-gray-700">We rigorously validate our methods through cross-validation, independent test sets, and real-world application testing. This ensures that our technology performs reliably in diverse scenarios and with different user populations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section class="py-16 bg-gray-50">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-12 text-center">Publications</h2>
+                    <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-sm">
+                        <p class="text-gray-700 mb-6 text-center">Our research team is actively publishing findings in peer-reviewed journals and conferences. Selected publications will be listed here as they become available.</p>
+                        <div class="border-t border-gray-200 pt-6 mt-6">
+                            <div class="flex items-start mb-6">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-primary">Brain-state modeling using electroencephalography (EEG)</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Alhroub, Q. (2025)</p>
+                                    <p class="text-gray-700">A comprehensive framework for analyzing EEG signals to model different brain states and utilize these decoded signals to control embedded systems and microcontrollers.</p>
+                                </div>
+                            </div>
+                            <!-- Add more publications as needed -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Collaboration Section -->
+            <section class="py-16">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h2 class="text-3xl font-bold mb-6">Collaborate with Us</h2>
+                        <p class="text-lg text-muted-foreground mb-8">We are actively seeking research collaborations with academic institutions, industry partners, and individual researchers. If you are interested in exploring the potential of brain-state modeling and EEG technology, we invite you to connect with us.</p>
+                        <a class="inline-block bg-secondary text-white hover:bg-opacity-90 py-3 px-8 rounded-md" href="contact.html">Contact Research Team</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-border pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-1">
+                    <img src="images/neuvelon_logo_light.jpg" alt="Neuvelon Logo" class="h-10 w-auto mb-4">
+                    <p class="text-sm text-muted-foreground">Pioneering the future of neuro technology through advanced brain-state modeling using EEG technology.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-primary">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="text-muted-foreground hover:text-primary">About Us</a></li>
+                        <li><a href="technology.html" class="text-muted-foreground hover:text-primary">Technology</a></li>
+                        <li><a href="products.html" class="text-muted-foreground hover:text-primary">Products</a></li>
+                        <li><a href="research.html" class="text-muted-foreground hover:text-primary">Research</a></li>
+                        <li><a href="contact.html" class="text-muted-foreground hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-primary">Contact</h3>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                        <li>Email: info@neuvelon.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Innovation Drive, Tech City</li>
+                    </ul>
+                </div>
+                <div>
+                     <h3 class="text-lg font-semibold mb-4 text-primary">Connect</h3>
+                     <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-muted-foreground hover:text-primary"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                        <a href="#" aria-label="Twitter" class="text-muted-foreground hover:text-primary"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-.424.728-.666 1.634-.666 2.617 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.247-2.229-.616v.054c0 2.39 1.7 4.381 3.951 4.84-.414.112-.85.172-1.296.172-.316 0-.622-.03-.921-.086.63 1.953 2.445 3.377 4.604 3.417-1.68 1.31-3.809 2.098-6.122 2.098-.398 0-.79-.023-1.175-.068 2.179 1.397 4.768 2.212 7.548 2.212 9.058 0 14.01-7.503 14.01-14.01 0-.213-.005-.426-.015-.637.96-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn" class="text-muted-foreground hover:text-primary"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
+                     </div>
+                </div>
+            </div>
+            <div class="border-t border-border pt-8 text-center text-sm text-muted-foreground">
+                <p>&copy; 2025 Neuvelon. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="#" class="hover:text-primary">Privacy Policy</a> | <a href="#" class="hover:text-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
